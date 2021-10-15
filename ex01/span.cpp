@@ -39,5 +39,6 @@ Span &Span::operator=( Span const &other ) {
 		return *this;
 	this->array.clear();
 	this->array = other.array;
+	this->size_max = other.size_max;
 	return *this;
 }
