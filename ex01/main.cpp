@@ -136,7 +136,7 @@ int main()
 		}
 	}
 	std::cout << std::endl;
-	std::cout << "\x1b[33m10000 random values test:\x1b[0m" << std::endl;
+	std::cout << "\x1b[33m10000 pseudo-random values test:\x1b[0m" << std::endl;
 	{
 		try {
 			std::vector<int> a;
