@@ -8,8 +8,9 @@
 int main() {
 	int arr[10] = {123, 3242, 5423, 123343, 4332, 123, 41, 6663, 634, 42};
 	std::cout << "Let's create array of ints with value: \"123, 3242, 5423, 123343, 4332, 123, 41, 6663, 634, 42\"\n\n";
+	std::cout << "\x1b[33mVector failed test:\x1b[0m" << std::endl;
 	{
-		std::cout << "Now let's create container vector and put array to him.\nThen found 12 value in container: ";
+		std::cout << "Now let's create container vector and put array in there.\nThen found 12 value in container: ";
 		try {
 			std::vector<int> a(arr, arr + sizeof(arr) / sizeof(int));
 			std::vector<int>::iterator it = easyfind(a, 12);
@@ -21,8 +22,9 @@ int main() {
 		}
 	}
 	std::cout << std::endl;
+	std::cout << "\x1b[33mDeque success test:\x1b[0m" << std::endl;
 	{
-		std::cout << "Now let's create container deque and put array to him.\nThen found 4332 value in container: ";
+		std::cout << "Now let's create container deque and put array in there.\nThen found 4332 value in container: ";
 		try {
 			std::deque<int> a;
 
@@ -37,8 +39,9 @@ int main() {
 		}
 	}
 	std::cout << std::endl;
+	std::cout << "\x1b[33mList failed test:\x1b[0m" << std::endl;
 	{
-		std::cout << "Now let's create container list and put array to him.\nThen found 43 value in container: ";
+		std::cout << "Now let's create container list and put array in there.\nThen found 43 value in container: ";
 		try {
 			std::list<int> a;
 
@@ -53,8 +56,9 @@ int main() {
 		}
 	}
 	std::cout << std::endl;
+	std::cout << "\x1b[33mSet success test:\x1b[0m" << std::endl;
 	{
-		std::cout << "Now let's create container set and put array to him.\nThen found 41 value in container: ";
+		std::cout << "Now let's create container set and put array in there.\nThen found 41 value in container: ";
 		try {
 			std::set<int> a(arr, arr + sizeof(arr) / sizeof(int));
 
