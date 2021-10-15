@@ -187,8 +187,10 @@ int main()
 
 		std::cout << "Size: " << mstack.size() << std::endl;
 
+		std::cout << "On top before sorting: " << mstack.top() << std::endl;
 		std::cout << "Sorting the MutantStack using function \x1b[34msort()\x1b[0m from \x1b[35m<algorithm>\x1b[0m" << std::endl;
 		std::sort(mstack.begin(), mstack.end());
+		std::cout << "On top now: " << mstack.top() << std::endl;
 
 		std::cout << "Print values using \x1b[36miterator\x1b[0m from begin to end\n";
 		MutantStack<int>::iterator ite = mstack.end();
